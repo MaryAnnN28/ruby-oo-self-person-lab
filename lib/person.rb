@@ -29,5 +29,30 @@ class Person
         @hygiene
     end
 
+    def happy?
+        if  @happiness > 7
+            return true
+        else
+            return false
+        end      
+    end
+
+    def clean?
+        if  @hygiene > 7
+            return true
+        else
+            return false
+        end      
+    end
+
+    def get_paid(salary)
+        @bank_account = @bank_account + salary
+        "all about the benjamins"
+    end
+
+    def take_bath
+        @hygiene = @hygiene + 4
+        "♪ Rub-a-dub just relaxing in the tub ♫"
+    end
 
 end
